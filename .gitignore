@@ -1,0 +1,147 @@
+# ══════════════════════════════════════════════════════════════
+#   .gitignore — Repositorio de Ciberseguridad
+#   Constan4/Cybersecurity
+#   Protege contra subidas accidentales de archivos sensibles
+# ══════════════════════════════════════════════════════════════
+
+
+# ──────────────────────────────────────────────
+# PAYLOADS Y EJECUTABLES MALICIOSOS
+# ──────────────────────────────────────────────
+*.exe
+*.dll
+*.msi
+*.elf
+payload_*
+*.payload
+*.shellcode
+*.bin
+reverse_shell*
+backdoor*
+malware*
+
+
+# ──────────────────────────────────────────────
+# CAPTURAS DE RED
+# ──────────────────────────────────────────────
+*.pcap
+*.pcapng
+*.cap
+*.pcap.gz
+
+
+# ──────────────────────────────────────────────
+# RESULTADOS DE ESCANEOS (pueden contener datos reales)
+# ──────────────────────────────────────────────
+recon_*.txt
+scan_*.txt
+*.nmap
+*.gnmap
+loot/
+msf_loot/
+
+
+# ──────────────────────────────────────────────
+# WORDLISTS (archivos muy grandes)
+# ──────────────────────────────────────────────
+wordlists/
+*.wordlist
+rockyou*
+*.dict
+
+
+# ──────────────────────────────────────────────
+# CLAVES, CERTIFICADOS Y CREDENCIALES
+# ──────────────────────────────────────────────
+*.key
+*.pem
+*.cer
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+*.pub
+hashes.txt
+creds.txt
+passwords.txt
+credentials/
+secrets/
+.env
+.env.local
+
+
+# ──────────────────────────────────────────────
+# METASPLOIT
+# ──────────────────────────────────────────────
+*.rc
+.msf4/
+
+
+# ──────────────────────────────────────────────
+# PYTHON
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+*.spec
+
+
+# ──────────────────────────────────────────────
+# LOGS
+# ──────────────────────────────────────────────
+*.log
+logs/
+
+
+# ──────────────────────────────────────────────
+# SISTEMA OPERATIVO
+# ──────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.nfs*
+
+
+# ──────────────────────────────────────────────
+# EDITORES E IDEs
+# ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.user
+.project
+.classpath
+
+
+# ──────────────────────────────────────────────
+# ARCHIVOS TEMPORALES
+# ──────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
